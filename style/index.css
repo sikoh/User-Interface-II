@@ -1,1 +1,69 @@
 /* Add CSS styling here */
+*{
+    border: 1px solid gray;
+}
+
+/*top of the site*/
+.sitetitle{
+    display:flex;
+    align-items: center;
+}
+.logo{
+    display:flex;
+    align-items: right; 
+}
+
+/*navication*/
+nav{
+    background-color: #D8D8D8;
+}
+.name{
+    text-align: left; 
+  }
+  .links a{
+    border: 1px solid darkgray;
+    padding: 20px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  a:visited {
+    color: white;
+    background-color: black;
+  }
+
+/*main picture with text and button*/
+.main{
+display:flex;
+align-items: center;
+flex-direction: row;
+margin: 0.5% 0 2%;
+}
+.text{
+text-align: center;
+}
+
+/*list of pictures and text*/
+
+.list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  p{
+    margin:0.2% 0 10%;
+  }
+
+
+
+
+  /*footer*/
+  footer{
+      background-color: #D8D8D8;
+      text-align: center;
+      padding: 3%;
+  }
