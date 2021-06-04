@@ -45,7 +45,7 @@ table {
 /*my css*/
 
 *{
-    border: 1px solid gray;
+
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -53,6 +53,7 @@ table {
 /*top of the site*/
 header{
     display:flex;
+    padding: 0%;
 }
  
 
@@ -60,6 +61,13 @@ header{
 text-align: center;
 margin-left: 45%;
 }
+
+.logo{
+    margin-top: 1.5%;
+}
+
+
+
 /*navication*/
 nav{
     background-color: #D8D8D8;
