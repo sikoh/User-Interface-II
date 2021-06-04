@@ -53,27 +53,29 @@ table {
 /*top of the site*/
 header{
     display:flex;
-    padding: 0%;
 }
  
-
+.logo{
+    margin-top: 1%;
+}
 .sitetitle{
 text-align: center;
 margin-left: 45%;
 }
 
-.logo{
-    margin-top: 1.5%;
-}
 
 
 
 /*navication*/
 nav{
     background-color: #D8D8D8;
+    padding: 1% 2% 2%;
+    font-size: 18px;
 }
 .name{
     text-align: left; 
+    font-weight: bold;
+    font-size: 20px;
   }
   .links a{
     border: 1px solid darkgray;
@@ -108,6 +110,7 @@ content: 3%;
     margin: 2%;
     background-color: gray;
     color: white;
+    font-size: 18px;
     }
 
 /*list of pictures and text*/
