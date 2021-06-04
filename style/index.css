@@ -1,18 +1,65 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/*my css*/
+
 *{
     border: 1px solid gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 
 /*top of the site*/
-.sitetitle{
+header{
     display:flex;
-    align-items: center;
 }
-.logo{
-    display:flex;
-    align-items: right; 
-}
+ 
 
+.sitetitle{
+text-align: center;
+margin-left: 45%;
+}
 /*navication*/
 nav{
     background-color: #D8D8D8;
@@ -39,11 +86,21 @@ nav{
 display:flex;
 align-items: center;
 flex-direction: row;
-margin: 0.5% 0 2%;
+margin: 0.5% 0.5% 2%;
 }
 .text{
 text-align: center;
+margin: 0 7% 0;
+padding: 2%;
+content: 3%;
 }
+
+.button1{
+    padding: 2%;
+    margin: 2%;
+    background-color: gray;
+    color: white;
+    }
 
 /*list of pictures and text*/
 
@@ -52,6 +109,7 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+    margin:0.5% ;
   }
   
   p{
@@ -59,11 +117,17 @@ text-align: center;
   }
 
 
-
+  .button2{
+    padding: 1% 2% 1%;
+    margin: 2%;
+    background-color: white;
+    font-size: 18px;
+    }
 
   /*footer*/
   footer{
       background-color: #D8D8D8;
       text-align: center;
-      padding: 3%;
+      padding: 1.5%;
+      font-size: 23px;
   }
