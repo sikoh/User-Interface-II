@@ -1,144 +1,271 @@
 /* Add CSS styling here */
-html, body, div, span, applet, object, iframe, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-
-
-
 
 /*my css*/
 
-*{
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+  color: #404040;
+  max-width: 100%;
+  box-sizing: border-box;
 }
-
 
 /*top of the site*/
-header{
-    display:flex;
+header {
+  border: rebeccapurple 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
- 
-.logo{
-    margin-top: 1%;
+header div {
+  width: 50%;
+  border: solid green 2px;
 }
-.sitetitle{
-text-align: center;
-margin-left: 45%;
-}
-
-
-
 
 /*navication*/
-nav{
-    background-color: #D8D8D8;
-    padding: 1% 2% 2%;
-    font-size: 18px;
+nav {
+  background-color: #d8d8d8;
+  font-size: 1.2rem;
+  padding-left: 2%;
 }
-.name{
-    text-align: left; 
-    font-weight: bold;
-    font-size: 20px;
-  }
-  .links a{
-    border: 1px solid darkgray;
-    padding: 20px;
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 20px;
-    background-color: white;
-  }
-  a:visited {
-    color: white;
-    background-color: black;
-  }
+
+.name {
+  font-size: 2.5rem;
+}
+.links {
+  padding: 1.5%;
+}
+
+.links a {
+  border: 1px solid darkgray;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 20px;
+  background-color: white;
+  font-size: 1.5rem;
+}
+
+a:visited {
+  color: white;
+  background-color: black;
+}
 
 /*main picture with text and button*/
-.main{
-display:flex;
-align-items: center;
-flex-direction: row;
-margin: 0.5% 0.5% 2%;
-}
-.text{
-text-align: center;
-margin: 0 7% 0;
-padding: 2%;
-content: 3%;
+.main {
+  display: flex;
+  align-items: center;
+  margin: 0.5% 0.5% 2%;
 }
 
-.button1{
-    padding: 2%;
-    margin: 2%;
-    background-color: gray;
-    color: white;
-    font-size: 18px;
-    }
+.picture {
+  width: 50%;
+}
+.text {
+  text-align: center;
+  margin: 0 7% 0;
+  padding: 2%;
+  content: 3%;
+}
+
+.button1 {
+  padding: 2%;
+  margin: 2%;
+  background-color: gray;
+  color: white;
+  font-size: 18px;
+}
 
 /*list of pictures and text*/
 
-.list{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: center;
-    margin:0.5% ;
-  }
-  
-  p{
-    margin:0.2% 0 10%;
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin: 1%;
+}
+
+.list p {
+  text-align: center;
+  margin-top: 0.1%;
+}
+
+.button2 {
+  padding: 1% 2% 1%;
+  margin: 2%;
+  background-color: white;
+  font-size: 18px;
+}
+
+/*footer*/
+footer {
+  background-color: #d8d8d8;
+  text-align: center;
+  padding: 1.5%;
+  font-size: 23px;
+}
+
+/***************  MOBILE STYLES  ********************/
+
+/* any screen with width below 1366px will inherit the folowing changes*/
+
+@media (max-width: 1366px) {
+  .main {
+    display: flex;
+    justify-content: space-around;
   }
 
+  .list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+/* any screen with width below 1090px will inherit the folowing changes*/
 
-  .button2{
-    padding: 1% 2% 1%;
-    margin: 2%;
+@media (max-width: 1090px) {
+  .main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 3%;
+  }
+  .picture {
+    width: 80%;
+  }
+
+  nav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .links a {
+    border: 1px solid darkgray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    text-decoration: none;
     background-color: white;
-    font-size: 18px;
-    }
-
-  /*footer*/
-  footer{
-      background-color: #D8D8D8;
-      text-align: center;
-      padding: 1.5%;
-      font-size: 23px;
+    font-size: 1.5rem;
   }
+}
+
+/* any screen with width below 360px will inherit the folowing changes*/
+
+@media (max-width: 360px) {
+}
